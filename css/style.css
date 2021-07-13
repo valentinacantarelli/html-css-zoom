@@ -115,8 +115,7 @@ main{
 }
 .fa-microphone-slash{
     color: crimson;
-    margin-right: 3px;
-    
+    margin-right: 3px;    
 }
 
 /*right*/
@@ -124,11 +123,32 @@ main{
        justify-content: flex-end;
 }
 
-
+/*footer*/
 footer{
     height: 40px;
     background: rgb(34,34,34);
 	background: linear-gradient(180deg, rgba(34,34,34,0.8799894957983193) 0%, rgba(3,3,3,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-    
+}
+.btn-footer{
+    display: inline-block;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 10px;
+    color: #aaabac;
+}
+.btn-footer i{
+    font-size: 15px;
+    padding: 3px;
+}
+.btn-end {
+    background-color: crimson;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+
 }
