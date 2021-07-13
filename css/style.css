@@ -56,9 +56,10 @@ header {
 main{
     max-height: calc(100vh - 70px);
     display: flex;
-    align-items: center;
+    padding: 0 10px;
+   /* align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 /*left*/
 .main-left, .main-right{
@@ -68,12 +69,10 @@ main{
 	border-radius: 0px;
 	border: 1px solid #000;
 	padding: 10px 15px;
-
 }
 .fa-caret-left, .fa-caret-right{
     color: #2db9ff;
-    font-size: 25px;
-      
+    font-size: 25px;    
 }
 
 .left, .right{
@@ -86,18 +85,38 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 90%;
-    max-height: 100%;
-    justify-content: space-between;
-    align-content: center;
+    height: calc(100% - 80px) ;
+    align-content: flex-start;
+    
+}
+.persone {
+    position: relative;
+    width: calc((100% / 5) - 6px);
+    height: 100%;
+    overflow: hidden;
+    margin: 3px;   
+     
 }
 .foto{
-    width:calc(20% - 3px);
-    height: calc(((100vh - 70px) / 5) - 3px);
-    margin-bottom: 3px;
-    border-radius: 5px;
-    position: relative;
+    width: 98%;
+	height: 90%;
+	object-fit: cover;
+}
+.nome{
+    position: absolute;
+    bottom: 5px;
+	left: 5px;
+    background-color: rgba(1,1,1,0.7);
+    color: white;
+    padding: 1px 3px;
+	border-radius: 3px;
+    font-size: 11px;
       
+}
+.fa-microphone-slash{
+    color: crimson;
+    margin-right: 3px;
+    
 }
 
 /*right*/
@@ -108,5 +127,8 @@ main{
 
 footer{
     height: 40px;
-    background-color: #26282a;
+    background: rgb(34,34,34);
+	background: linear-gradient(180deg, rgba(34,34,34,0.8799894957983193) 0%, rgba(3,3,3,1) 100%);
+    
+    
 }
